@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import { dbConnect } from "@/services/mongo";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -10,6 +11,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  dbConnect();
   return (
     <html lang="en">
       <body className={inter.className}>
