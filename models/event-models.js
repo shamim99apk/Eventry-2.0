@@ -1,35 +1,35 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose, {Schema} from "mongoose";
 
 const schema = new Schema({
   name: {
     required: true,
-    type: String,
+    type: String
   },
   details: {
     required: true,
-    type: String,
+    type: String
   },
   location: {
     required: true,
-    type: String,
+    type: String
   },
   imageUrl: {
     required: true,
-    type: String,
+    type: String
   },
   interested_ids: {
     required: false,
-    type: Array,
+    type: Array
   },
   going_ids: {
     required: false,
-    type: Array,
+    type: Array
   },
   swgs: {
     required: false,
-    type: Array,
-  },
+    type: Array
+  }
 });
 
-export const eventModel =
-  mongoose.models.events ?? mongoose.model("events", schema);
+
+export const eventModel = mongoose.models.events ?? mongoose.model("events", schema);

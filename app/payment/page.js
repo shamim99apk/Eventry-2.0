@@ -1,4 +1,4 @@
-import PaymentForm from "@/components/payments/PaymentForm";
+import PaymentForm from "@/components/payments/PaymentForm"
 
 const PaymentPage = () => {
   return (
@@ -8,7 +8,7 @@ const PaymentPage = () => {
         <PaymentForm />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default PaymentPage;
+export default PaymentPage
